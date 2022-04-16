@@ -1,10 +1,10 @@
 #include "keyboard.h"
-#include "../drivers/vga/display.h"
-#include "../drivers/ports/ports.h"
-#include "../cpu/interrupt.h"
-#include "../cpu/global.h"
-#include "../kernel/util.h"
-#include "../kernel/kernel.h"
+#include "../vga/display.h"
+#include "../ports/ports.h"
+#include "../../cpu/interrupt.h"
+#include "../../cpu/global.h"
+#include "../../kernel/util.h"
+#include "../../kernel/kernel.h"
 #define BACKSPACE 0x0E
 #define ENTER 0x1C
 static char key_buffer[256];
